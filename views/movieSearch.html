@@ -1,0 +1,20 @@
+<section class="container">
+  <h1 class="title">Lookup Movies</h1>
+  <div class="searchBar">
+    <input placeholder="Search Movie by Title" ng-model="title">
+    <button type="button" ng-click="getMovie(title)">Submit Movie Request</button>
+  </div>
+
+    <div ng-repeat="movie in move" class="movers">
+      <h1>
+          {{movie.Title}}
+      </h1>
+      <h2>
+          Released: {{movie.Year}}
+      </h2>
+
+      <img ng-show="{{movie.Poster !== 'N/A'}}" ng-src='http://img.omdbapi.com/?i={{movie.imdbID}}&h=200&apikey=8ff7b56'>
+
+    </div>
+
+</section>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html ng-app="noServer">
+  <head>
+    <meta charset="utf-8">
+    <title>Movie Something Something</title>
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/style.css">
+  </head>
+  <base href="/">
+
+  <body ng-controller="mainCtrl">
+
+  <header class="header">
+    <nav class="nav">
+      <ul>
+        <li><a ui-sref="home">Home</a></li>
+        <li><a ui-sref="movie">Movie Search</a></li>
+        <li><a ui-sref="watch">Reviews</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <ui-view>
+    </ui-view>
+  </main>
+
+
+
+
+
+
+    <!--Getting Angular-->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"> </script>
+
+    <!-- routing src-->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.14/angular-ui-router.js"></script>
+
+    <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="js/routes.js"></script>
+    <script type="text/javascript" src="js/mainCtrl.js"></script>
+    <script type="text/javascript" src="js/service.js"></script>
+    <script type="text/javascript" src="js/movie.js"></script>
+    <script type="text/javascript" src="js/jquery-2.0.3.min.js"></script>
+    <script type="text/javascript" src="js/animations.js"></script>
+
+  </body>
+</html>

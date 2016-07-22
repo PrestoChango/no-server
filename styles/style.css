@@ -1,0 +1,105 @@
+.header {
+  height: 60px;
+  width: 100%;
+  background-color: #999;
+  margin-bottom: 8px;
+}
+
+.nav {
+  color: white;
+  height: 60px;
+  width: 80%;
+  margin: auto;
+  display: flex;
+}
+
+ul {
+  list-style: none;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.container {
+  width: 700px;
+  margin: auto;
+  border: 2px solid gray;
+  min-height: 550px;
+}
+
+.title {
+  text-align: center;
+  margin-top: 5px;
+  font-weight: bolder;
+}
+
+.searchBar {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  padding-bottom: 10px;
+}
+
+.searchBar > input {
+  margin-right: 5px;
+}
+
+.movers {
+  margin: 5px;
+  border: 1px dotted green;
+  height: 200px;
+  display: flex;
+}
+
+div > h1 {
+  width: 45%;
+}
+
+div > h2 {
+  width: 37%;
+}
+
+div > img {
+  width: 18%
+}
+
+textarea {
+  resize: none;
+}
+
+.addReview {
+  border-radius: 5px;
+  text-align: center;
+  margin-left: 297px;
+}
+
+.review {
+  width: 500px;
+  color: blue;
+  display: none;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.reviewContainer {
+  width: 700px;;
+  margin: auto;
+  border: 2px solid gray;
+  min-height: 550px;
+  margin-bottom: 10px;
+}
+
+.reviewBox {
+  border: 1px solid darkgreen;
+  width: 300px;
+  height: 200px;
+  margin: 5px;
+}
+
+.allReviews {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}

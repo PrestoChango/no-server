@@ -1,0 +1,30 @@
+<section class="reviewContainer">
+
+  <h1 class="title">Movie Reviews</h1>
+
+  <button class="addReview">Write a Review</button>
+
+    <form class="review">
+      <input placeholder="Your Name" ng-model="submits.name">
+      <input placeholder="Movie being reviewed" ng-model="submits.movie">
+      <textarea placeholder="Enter Review Here" ng-model="submits.review"></textarea>
+      <input placeholder="Score out of 100" ng-model="submits.score">
+      <button class="submitReview" ng-click="submit(submits.name,submits.movie,submits.review,submits.score)">Submit Review</button>
+    </form>
+
+  <main class="allReviews">
+
+    <section class="reviewBox" ng-repeat="review in reviews">
+      <div class="title">{{review.movie}}</div>
+      {{review.review}}
+      Critic: {{review.critic}}
+      {{review.reviewDate | date: 'longDate'}}
+      {{review.score}}
+    </section>
+
+
+
+
+  </main>
+
+</section>
