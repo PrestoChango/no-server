@@ -1,30 +1,40 @@
 <section class="reviewContainer">
 
-  <h1 class="title">Movie Reviews</h1>
-
-  <button class="addReview">Write a Review</button>
+<h1 class="title">Reviews</h1>
+<div  class="addReview">
+  <button>Write a Review</button>
+</div>
 
     <form class="review">
-      <input placeholder="Your Name" ng-model="submits.name">
-      <input placeholder="Movie being reviewed" ng-model="submits.movie">
-      <textarea placeholder="Enter Review Here" ng-model="submits.review"></textarea>
-      <input placeholder="Score out of 100" ng-model="submits.score">
-      <button class="submitReview" ng-click="submit(submits.name,submits.movie,submits.review,submits.score)">Submit Review</button>
+      <div class="reviewHeader">
+        <input placeholder="Your Name" ng-model="submits.name"> <img src="../img/asterisk.png" height="10px">
+      </div>
+      <div class="movToReview">
+        <input placeholder="Title being reviewed" ng-model="submits.movie"> <img src="../img/asterisk.png" height="10px">
+      </div>
+      <div class="reviewArea">
+        <textarea class="leaveReview" rows="13" cols="60" placeholder="Enter Review Here" ng-model="submits.review"></textarea> <img src="../img/asterisk.png" height="10px">
+      </div>
+      <div class="score">
+        <input class="scoreInput" placeholder="Score out of 100" ng-model="submits.score"> <img src="../img/asterisk.png" height="10px" margin-left="10px"> <span class="charCount">250<span>
+      </div>
+      <div class="sub">
+        <button class="submitReview" ng-click="submit(submits.movie, submits.name, submits.review, submits.score)">Submit Review</button>
+      </div>
     </form>
 
   <main class="allReviews">
-
     <section class="reviewBox" ng-repeat="review in reviews">
-      <div class="title">{{review.movie}}</div>
-      {{review.review}}
-      Critic: {{review.critic}}
-      {{review.reviewDate | date: 'longDate'}}
-      {{review.score}}
+      <div class="titleMovie">{{review.movie}}</div>
+      <div class="reviewContent">
+        <div class="reviewText">{{review.review}}</div>
+        <div class="critic">
+          Author - {{review.critic}}
+        </div>
+        <div class="avgScore">Score <h1>{{review.score}}</h1></div></br>
+        <div class="date">Review Date: {{review.reviewDate | date: 'longDate'}}</div>
+    </div>
     </section>
-
-
-
-
   </main>
 
 </section>
