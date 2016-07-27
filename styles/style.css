@@ -2,7 +2,8 @@ body {
   background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url('../img/background.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  height: 900px;
+  height: 100%;
+  padding-bottom: 5px;
 }
 
 .header {
@@ -101,7 +102,6 @@ ul {
 
 .three {
   width: 18%
-  margin: auto;
 }
 div > h1 {
 
