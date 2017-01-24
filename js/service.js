@@ -20,12 +20,18 @@ angular.module('noServer').service('serv', function ($http, $q) {
 
   this.pushData = function(movieObj) {
     var movies = JSON.parse(localStorage.getItem('Reviews'));
-    movies.push(movieObj);
+    for(var i = 0; i < movies.length; i++){
+      if(movies[i].title === 'starwars'){
+        movies.splice(i, 1);
+      }
+    }
+    // movies.push(movieObj);
     localStorage.setItem('Reviews', JSON.stringify(movies));
    };
 
   this.getReviews = function() {
     var movies = JSON.parse(localStorage.getItem('Reviews'));
+
     if (!movies) {
       localStorage.setItem('Reviews', JSON.stringify([
       { movie: 'Star Wars: Episode IV - A New Hope', critic: 'Vern Perry', review: 'Star Wars is nothing short of pure unadulterated entertainment, something that has been sorely lacking in a great majority of recent films.', reviewDate: 'December 21, 2015', score: 86},
