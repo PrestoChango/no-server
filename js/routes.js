@@ -6,7 +6,7 @@ angular.module('noServer')
     $stateProvider
       .state('home', {
         url: '/',
-        templateUrl: './no-server/views/homepage.html'
+        templateUrl: './no-server/views/homePage.html'
       })
       .state('movie', {
         url: '/movieSearch',
