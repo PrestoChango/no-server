@@ -2,7 +2,7 @@
   <h1 class="title">Search for Movies, TV shows, and Video Games!</h1>
   <form class="searchBar">
     <input placeholder="Search by Title" ng-model="title">
-    <input type="image"  src="../img/magnifier-tool.svg" ng-Click="getMovie(title)" height="28px">
+    <input type="image"  src="./no-server/img/magnifier-tool.svg" ng-Click="getMovie(title)" height="28px">
   </form>
 
     <div ng-repeat="movie in move" class="movers">
@@ -24,7 +24,7 @@
 
 
 
-      <img class="three" ng-show="{{movie.Poster !== 'N/A'}}" ng-src='http://img.omdbapi.com/?i={{movie.imdbID}}&h=200&apikey=8ff7b56'>
+      <img class="three" ng-show="{{movie.Poster !== 'N/A'}}" ng-src='https://img.omdbapi.com/?i={{movie.imdbID}}&h=200&apikey=8ff7b56'>
 
     </div>
 
