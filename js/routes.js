@@ -6,15 +6,15 @@ angular.module('noServer')
     $stateProvider
       .state('home', {
         url: '/',
-        templateUrl: './no-server/views/homePage.html'
+        templateUrl: './views/homePage.html'
       })
       .state('movie', {
         url: '/movieSearch',
-        templateUrl: './no-server/views/movieSearch.html'
+        templateUrl: './views/movieSearch.html'
       })
       .state('watch', {
         url: '/reviews',
-        templateUrl: './no-server/views/reviews.html'
+        templateUrl: './views/reviews.html'
       });
 
 

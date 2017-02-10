@@ -7,16 +7,16 @@
 
     <form class="review">
       <div class="reviewHeader">
-        <input placeholder="Your Name" ng-model="submits.name"> <img src="./no-server/img/asterisk.png" height="10px">
+        <input placeholder="Your Name" ng-model="submits.name"> <img src="./img/asterisk.png" height="10px">
       </div>
       <div class="movToReview">
-        <input placeholder="Title being reviewed" ng-model="submits.movie"> <img src="./no-server/img/asterisk.png" height="10px">
+        <input placeholder="Title being reviewed" ng-model="submits.movie"> <img src="./img/asterisk.png" height="10px">
       </div>
       <div class="reviewArea">
-        <textarea class="leaveReview" rows="13" cols="60" placeholder="Enter Review Here" ng-model="submits.review"></textarea> <img src="./no-server/img/asterisk.png" height="10px">
+        <textarea class="leaveReview" rows="13" cols="60" placeholder="Enter Review Here" ng-model="submits.review"></textarea> <img src="./img/asterisk.png" height="10px">
       </div>
       <div class="score">
-        <input class="scoreInput" placeholder="Score out of 100" ng-model="submits.score"> <img src="./no-server/img/asterisk.png" height="10px" margin-left="10px"> <span class="charCount">250<span>
+        <input class="scoreInput" placeholder="Score out of 100" ng-model="submits.score"> <img src="./img/asterisk.png" height="10px" margin-left="10px"> <span class="charCount">250<span>
       </div>
       <div class="sub">
         <button class="submitReview" ng-click="submit(submits.movie, submits.name, submits.review, submits.score)">Submit Review</button>

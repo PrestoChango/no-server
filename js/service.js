@@ -20,12 +20,7 @@ angular.module('noServer').service('serv', function ($http, $q) {
 
   this.pushData = function(movieObj) {
     var movies = JSON.parse(localStorage.getItem('Reviews'));
-    for(var i = 0; i < movies.length; i++){
-      if(movies[i].title === 'starwars'){
-        movies.splice(i, 1);
-      }
-    }
-    // movies.push(movieObj);
+    movies.push(movieObj);
     localStorage.setItem('Reviews', JSON.stringify(movies));
    };
 
