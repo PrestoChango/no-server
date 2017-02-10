@@ -3,7 +3,7 @@ angular.module('noServer').service('serv', function ($http, $q) {
   this.getData = function(movie) {
     return $http({
       method: "GET",
-      url: 'http://www.omdbapi.com/?s=' + movie
+      url: 'https://www.omdbapi.com/?s=' + movie
     }).then(function(response) {
       return response.data.Search;
     });
@@ -12,7 +12,7 @@ angular.module('noServer').service('serv', function ($http, $q) {
   this.getMoreData = function(movie) {
     return $http({
       method: "GET",
-      url: 'http://www.omdbapi.com/?i=' + movie + '&type=movie'
+      url: 'https://www.omdbapi.com/?i=' + movie + '&type=movie'
     }).then(function(response) {
       return response.data;
     })
